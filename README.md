@@ -7,7 +7,7 @@ Suppose the date format mask for a field is 'MM/DD/YYYY' (as specified on the it
 
 In case the input value can not be parsed as per any of all the masks, the input value is left untouched. The feedback to the user will be upon validation in the page, resulting in an invalid date error message.
 
-The plugin functionality is applied to the input field of APEX Date Picker items (Display As 'Popup').
+The plugin functionality is applied to the input field of APEX Date Picker items (Display As 'Popup'). Also date fields in APEX dialogs (like the Actions/Filters dialog in reports) do have automatically the functionality attached (can be disabled).
 
 To define the alternative masks, add a Dynamic Action On Page Load. This can also be on page 0 as to define for the whole application. In the true action, select 'LIB4X - Alternative Date Masks [Plug-In]':
 
