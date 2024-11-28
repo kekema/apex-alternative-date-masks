@@ -26,9 +26,9 @@
         "versions" : ["24.1.5"],
         "plugin" : {
           "internalName" : "LIB4X.AXT.DATE.ALTMASKS",
-          "type" : "item",
+          "type" : "dynamic action",
 	  "demo" : "https://apex.oracle.com/pls/apex/r/yola/demo/alternative-date-masks",
-	  "previewImage" : "https://github.com/kekema/apex-popup-lov-search-ref/blob/main/lov-search.jpg?raw=true"
+	  "previewImage" : "https://github.com/kekema/apex-alternative-date-masks/blob/main/alternative-date-masks-demo.jpg?raw=true"
         }
       }
     }
