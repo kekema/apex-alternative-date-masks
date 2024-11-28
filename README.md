@@ -9,6 +9,8 @@ The plugin functionality is applied to the input field of APEX Date Picker items
 
 To define the alternative masks, add a Dynamic Action On Page Load. This can also be on page 0 as to define for the whole application. In the true action, select 'LIB4X - Alternative Date Masks [Plug-In]':
 
+![image](https://github.com/kekema/apex-alternative-date-masks/blob/main/alternative-date-masks-definition.jpg)
 
+In case the application uses multiple date format masks for which you want to define alternative masks, simply add multiple true actions to the DA.
 
-
+See: [demo page](https://apex.oracle.com/pls/apex/r/yola/demo/alternative-date-masks)
