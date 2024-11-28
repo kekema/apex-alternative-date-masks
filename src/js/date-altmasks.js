@@ -122,6 +122,7 @@ lib4x.axt.date.alternativeMasks = (function($)
     // prioritize our dateChangeHandler
     function prioritizeChangeHandler(element)
     {
+        // http://www.robeesworld.com/blog/67/changing-the-order-of-the-jquery-event-queue
         let eventList = $._data(element, "events");
         // to be sure, check if the last handler is our dateChangeHandler
         if (eventList?.change && eventList.change.length && (eventList.change[eventList.change.length-1].handler === dateChangeHandler))
