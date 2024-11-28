@@ -14,3 +14,5 @@ To define the alternative masks, add a Dynamic Action On Page Load. This can als
 In case the application uses multiple date format masks for which you want to define alternative masks, simply add multiple true actions to the DA.
 
 See: [demo page](https://apex.oracle.com/pls/apex/r/yola/demo/alternative-date-masks)
+
+![image](https://github.com/kekema/apex-alternative-date-masks/blob/main/alternative-date-masks-demo.jpg)
