@@ -1,7 +1,7 @@
 {
     "name" : "Alternative Date Masks",
     "version" : "1.0.0",
-    "description" : "Enables the user to enter dates as per one of the defined alternative masks. #lib4x",
+    "description" : "Enables the user to enter dates as per one of a list of defined alternative masks. #lib4x",
     "keywords" : ["Date Masks"],
     "homepage" : "https://github.com/kekema/apex-alternative-date-masks",
     "bugs" : {
