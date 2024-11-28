@@ -1,5 +1,5 @@
 # apex-alternative-date-masks
-Enables the user to enter dates as per one of the defined alternative masks.
+Enables the user to enter dates as per one of a list of defined alternative masks
 
 Given a date format mask, this plugin enables to specify one or more alternative masks. Enabling the end-user alternative ways to enter a date. Upon entering a value in a date field, all masks are iterated till the entered date can be parsed successfully. Subsequently this parsed date will be formatted to the original date format mask for the field. The parsing and formatting is as per [apex.date](https://docs.oracle.com/en/database/oracle/apex/24.1/aexjs/apex.date.html).
 
