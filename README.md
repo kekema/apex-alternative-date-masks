@@ -5,7 +5,7 @@ Given a date format mask, this plugin enables to specify one or more alternative
 
 Suppose the date format mask for a field is 'MM/DD/YYYY' (as specified on the item or as the application date format mask). Then an alternative mask could be YYYYMMDD, so the date can also be entered then as eg 20241231 (mil format). 
 
-In case the input value can not be parsed to none of all the masks, the input value is left untouched. The feedback to the user will be upon validation in the page.
+In case the input value can not be parsed as per any of all the masks, the input value is left untouched. The feedback to the user will be upon validation in the page.
 
 The plugin functionality is applied to the input field of APEX Date Picker items (Display As 'Popup').
 
