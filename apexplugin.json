@@ -1,7 +1,7 @@
 {
     "name" : "Alternative Date Masks",
     "version" : "1.0.0",
-    "description" : "Making the search value available for reference in the LOV query, enabling 'Starts With' search. #lib4x",
+    "description" : "Enables the user to enter dates as per one of the defined alternative masks. #lib4x",
     "keywords" : ["Date Masks"],
     "homepage" : "https://github.com/kekema/apex-alternative-date-masks",
     "bugs" : {
