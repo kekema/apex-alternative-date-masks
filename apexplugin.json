@@ -1,0 +1,35 @@
+{
+    "name" : "Alternative Date Masks",
+    "version" : "1.0.0",
+    "description" : "Making the search value available for reference in the LOV query, enabling 'Starts With' search. #lib4x",
+    "keywords" : ["Date Masks"],
+    "homepage" : "https://github.com/kekema/apex-alternative-date-masks",
+    "bugs" : {
+      "url" : "https://github.com/kekema/apex-alternative-date-masks/issues",
+      "email" : "karel0008@gmail.com"
+    },
+    "license" : "MIT",
+    "commercial" : "No",
+    "author" : {
+      "name" : "Karel Ekema",
+      "email" : "karel0008@gmail.com",
+      "url" : "https://www.ekema-it.com/",
+      "twitter": "@KarelEkema"
+    },
+    "repository" : {
+      "type" : "git",
+      "url" : "https://github.com/kekema/apex-alternative-date-masks"
+    },
+    "oracle" : {
+      "versions": ["19.0.0.0"],	
+      "apex" : {
+        "versions" : ["24.1.5"],
+        "plugin" : {
+          "internalName" : "LIB4X.AXT.DATE.ALTMASKS",
+          "type" : "item",
+	  "demo" : "https://apex.oracle.com/pls/apex/r/yola/demo/popup-lov-search-ref",
+	  "previewImage" : "https://github.com/kekema/apex-popup-lov-search-ref/blob/main/lov-search.jpg?raw=true"
+        }
+      }
+    }
+}
