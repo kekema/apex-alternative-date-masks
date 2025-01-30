@@ -87,9 +87,34 @@ lib4x.axt.date.alternativeMasks = (function($)
                     {
                         try 
                         {
-                            parsedDate = apex.date.parse(dateStringValue, dateMask);
-                            apex.debug.trace('lib4x.axt.date.alternativeMasks.dateChangeHandler: parse success - dateMask:', dateMask);
-                            dateOk = true;
+                            if (dateMask == 'DD')
+                            {
+                                parsedDate = new Date();
+                                let currentMonth = parsedDate.getMonth();
+                                let currentYear = parsedDate.getFullYear();
+                                let setResult = parsedDate.setDate(dateStringValue);   // set day
+                                if (isNaN(setResult) || (parsedDate.getMonth() != currentMonth) || (parsedDate.getFullYear() != currentYear))
+                                {
+                                    throw new Error('Entered value is not a valid day');
+                                }
+                                dateOk = true;
+                            } 
+                            else if ((dateMask == 'DD/MM') || (dateMask == 'MM/DD') || (dateMask == 'DD-MM') || (dateMask == 'MM-DD') || (dateMask == 'DD.MM') || (dateMask == 'MM.DD'))
+                            {
+                                let currentYear = new Date().getFullYear();
+                                // whatever the separator, the below with adding using '/' just works 
+                                parsedDate = apex.date.parse(dateStringValue + '/' + currentYear, dateMask + '/YYYY');
+                                dateOk = true;
+                            }  
+                            else
+                            {                         
+                                parsedDate = apex.date.parse(dateStringValue, dateMask);
+                                dateOk = true;
+                            }
+                            if (dateOk)
+                            {
+                                apex.debug.trace('lib4x.axt.date.alternativeMasks.dateChangeHandler: parse success - dateMask:', dateMask);
+                            }
                         }
                         catch (e) 
                         {
